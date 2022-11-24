@@ -1,10 +1,10 @@
 import App from "next/app";
 import Link from "next/link";
 import "../styles.css";
-
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "../store";
+import SearchContainer from "../components/containers/Search";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -22,6 +22,9 @@ class MyApp extends App {
 
     return (
       <Provider store={store}>
+        <Link href="/search">
+          <a> Search </a>
+        </Link>
         <Link href="/">
           <a> Home </a>
         </Link>

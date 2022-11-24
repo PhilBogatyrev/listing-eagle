@@ -1,5 +1,5 @@
-import ProductsContainer from "../components/containers/Products";
+import ProductContainer from "../components/containers/Products";
 
 export default function App() {
-  return <ProductsContainer />;
+  return <ProductContainer />;
 }

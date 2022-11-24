@@ -6,7 +6,7 @@ import List from "../ui/product/List";
 const ProductContainer = ({
   products,
   onAddItemtoCard,
-  onRemoveItemFromCard
+  onRemoveItemFromCard,
 }) => {
   return (
     <List
@@ -18,8 +18,8 @@ const ProductContainer = ({
 };
 
 export default connect(
-  state => ({
-    products: state.product.products
+  (state) => ({
+    products: state.product.products,
   }),
   { onAddItemtoCard }
 )(ProductContainer);

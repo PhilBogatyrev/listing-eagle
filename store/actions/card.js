@@ -1,13 +1,17 @@
 import * as C from "../types/card";
 
-const onAddItemtoCard = item => ({
-  type: C.ADD_ITEM,
-  payload: { item }
-});
+const onAddItemtoCard = (item) => {
+  console.log("ADD ITEM");
 
-const onRemoveItemFromCard = index => ({
+  return {
+    type: C.ADD_ITEM,
+    payload: { item },
+  };
+};
+
+const onRemoveItemFromCard = (index) => ({
   type: C.REMOVE_ITEM,
-  payload: { index }
+  payload: { index },
 });
 
 export { onAddItemtoCard, onRemoveItemFromCard };

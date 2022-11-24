@@ -9,6 +9,8 @@
   "dependencies": {
     "@react-native-community/async-storage": "1.11.0",
     "cookies-js": "1.2.3",
+    "google-search-results-nodejs": "^2.1.0",
+    "material-ui": "^0.20.2",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

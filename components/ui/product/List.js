@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProdcutList = ({ products, addItemtoCard }) => {
+const ProductList = ({ products, addItemtoCard }) => {
   return (
     <div className="medium-container">
       <table>
@@ -12,12 +12,12 @@ const ProdcutList = ({ products, addItemtoCard }) => {
           </tr>
         </thead>
         <tbody>
-          {products.map(product => (
+          {products.map((product) => (
             <tr key={product.id}>
               <td>{product.name}</td>
               <td>{product.price + " $"}</td>
               <td>
-                <button onClick={e => addItemtoCard(product)}>Add</button>
+                <button onClick={(e) => addItemtoCard(product)}>Add</button>
               </td>
             </tr>
           ))}
@@ -27,4 +27,4 @@ const ProdcutList = ({ products, addItemtoCard }) => {
   );
 };
 
-export default ProdcutList;
+export default ProductList;
