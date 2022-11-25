@@ -3,16 +3,16 @@ import { connect } from "react-redux";
 import Search from "../ui/search/Search";
 import { onSearchRequest } from "../../store/actions/search";
 
-const SearchContainer = ({ querySent, query, onSearchRequest }) => {
+const SearchContainer = ({ query, querySent, onSearchRequest }) => {
   return (
-    <Search querySent={querySent} query={query} onSearch={onSearchRequest} />
+    <Search query={query} querySent={querySent} onSearch={onSearchRequest} />
   );
 };
 
 export default connect(
   (state) => ({
-    query: state.query,
-    querySent: state.querySent,
+    query: state.search.query,
+    querySent: state.search.querySent,
   }),
   { onSearchRequest }
 )(SearchContainer);

@@ -1,13 +1,10 @@
 import React from "react";
 import { useState } from "react";
 
-const Search = ({ querySent, query, onSearch }) => {
-  console.log("ONSEARCH");
-  console.log(query);
+const Search = ({ query, querySent, onSearch }) => {
+  console.log("query: ", query);
   const [message, setMessage] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
-
-  console.log(querySent);
 
   const handleChange = (event) => {
     event.preventDefault();
@@ -19,9 +16,7 @@ const Search = ({ querySent, query, onSearch }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setSearchQuery(event.target.queryField.value);
-    onSearch(event.target.queryField.value, true);
-
-    console.log("value is:", event.target.queryField.value);
+    onSearch({ query: event.target.queryField.value, querySent: querySent });
   };
 
   return (

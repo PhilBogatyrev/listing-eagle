@@ -6,18 +6,20 @@ import session from "redux-persist/lib/storage/session"; // defaults to localSto
 //import Cookies from "cookies-js";
 import cardReducer from "./card";
 import productsReducer from "./products";
+import searchReducer from "./search";
 
 // WHITELIST
 const persistConfig = {
   key: "root",
   // storage: new CookieStorage(Cookies), //session,
   storage: session,
-  whitelist: ["card"] // only card will be persisted
+  whitelist: ["card", "search"], // only card will be persisted
 };
 
 const rootReducer = combineReducers({
   card: cardReducer,
-  product: productsReducer
+  product: productsReducer,
+  search: searchReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

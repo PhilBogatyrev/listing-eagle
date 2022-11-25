@@ -14,9 +14,9 @@ const CardContainer = ({ items, total, onRemoveItemFromCard }) => {
 };
 
 export default connect(
-  state => ({
+  (state) => ({
     items: state.card.items,
-    total: state.card.total
+    total: state.card.total,
   }),
   { onRemoveItemFromCard }
 )(CardContainer);
