@@ -19,10 +19,18 @@ const Search = ({ query, querySent, onSearch }) => {
     onSearch({ query: event.target.queryField.value, querySent: querySent });
   };
 
+  async function getCatFacts() {
+    const res = await fetch("https://catfact.ninja/fact");
+    const posts = await res.json();
+
+    return posts;
+  }
+
   return (
     <div className="topnav">
       <h1>query: {query}</h1>
       <h1>searchQuery: {searchQuery}</h1>
+      <h1>cat facts: {getCatFacts()}</h1>
 
       <form onSubmit={(e) => handleSubmit(e)}>
         <input
