@@ -6,15 +6,17 @@
     "build": "next build",
     "start": "next start"
   },
+  "proxy": "http://192.165.1.220:28080",
   "dependencies": {
     "@react-native-community/async-storage": "1.11.0",
     "axios": "^1.2.1",
     "cookies-js": "1.2.3",
-    "ebay-oauth-nodejs-client": "^1.2.2",
     "fs": "^0.0.1-security",
     "google-search-results-nodejs": "^2.1.0",
+    "http-proxy-middleware": "^2.0.6",
     "material-ui": "^0.20.2",
     "next": "latest",
+    "node-rsa": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "7.2.0",
