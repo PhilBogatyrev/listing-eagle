@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<findItemsByKeywordsRequest xmlns="http://www.ebay.com/marketplace/search/v1/services">
+  <affiliate>
+    <networkId>9</networkId>
+    <trackingId>1234567890</trackingId>
+    <customId>k-man</customId>
+  </affiliate>
+  <sortOrder>EndTime</sortOrder>
+  <paginationInput>
+    <entriesPerPage>100</entriesPerPage>
+  </paginationInput>
+  <keywords>iphone</keywords>
+</findItemsByKeywordsRequest>
