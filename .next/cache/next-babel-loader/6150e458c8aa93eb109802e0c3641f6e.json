@@ -1,0 +1,1 @@
+{"ast":null,"code":"import * as C from \"../types/card\";\n\nconst onAddItemtoCard = item => ({\n  type: C.ADD_ITEM,\n  payload: {\n    item\n  }\n});\n\nconst onRemoveItemFromCard = index => ({\n  type: C.REMOVE_ITEM,\n  payload: {\n    index\n  }\n});\n\nexport { onAddItemtoCard, onRemoveItemFromCard };","map":null,"metadata":{},"sourceType":"module"}

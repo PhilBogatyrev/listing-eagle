@@ -1,0 +1,1 @@
+{"ast":null,"code":"import * as S from \"../types/search\";\n\nvar onSearchRequest = function onSearchRequest(query, querySent) {\n  console.log(\"Search action\");\n  return {\n    type: S.SEARCH_REQUEST,\n    payload: {\n      query: query,\n      querySent: querySent\n    }\n  };\n};\n\nexport { onSearchRequest };","map":null,"metadata":{},"sourceType":"module"}

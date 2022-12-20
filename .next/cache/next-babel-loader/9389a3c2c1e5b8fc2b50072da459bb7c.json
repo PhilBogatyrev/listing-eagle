@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport ProductsContainer from \"../components/containers/Products\";\nexport default function App() {\n  return __jsx(ProductsContainer, null);\n}","map":null,"metadata":{},"sourceType":"module"}

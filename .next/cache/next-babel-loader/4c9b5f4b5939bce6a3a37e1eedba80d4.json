@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var GET_PRODUCTS_LIST = \"GET_PRODUCTS_LIST\";","map":{"version":3,"sources":["/Users/phil/listing-eagle/store/types/products.js"],"names":["GET_PRODUCTS_LIST"],"mappings":"AAAA,OAAO,IAAMA,iBAAiB,GAAG,mBAA1B","sourcesContent":["export const GET_PRODUCTS_LIST = \"GET_PRODUCTS_LIST\";\n"]},"metadata":{},"sourceType":"module"}
