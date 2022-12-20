@@ -105,6 +105,7 @@ const Search = ({ query, querySent, onSearch }) => {
         scope: "https://api.ebay.com/oauth/api_scope",
       }),
     };
+
     fetch(
       "https://api.sandbox.ebay.com/identity/v1/oauth2/token",
       //"https://cors-anywhere.herokuapp.com/https://api.sandbox.ebay.com/identity/v1/oauth2/token",
