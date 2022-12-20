@@ -95,7 +95,7 @@ const Search = ({ query, querySent, onSearch }) => {
   const getToken = () => {
     const requestOptions = {
       method: "POST",
-      mode: "no-cors",
+
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization: base64ClientCredentials,
@@ -106,7 +106,8 @@ const Search = ({ query, querySent, onSearch }) => {
       }),
     };
     fetch(
-      "https://api.sandbox.ebay.com/identity/v1/oauth2/token",
+      //"https://api.sandbox.ebay.com/identity/v1/oauth2/token",
+      "https://cors-anywhere.herokuapp.com/https://api.sandbox.ebay.com/identity/v1/oauth2/token",
       requestOptions
     )
       .then((res) => {

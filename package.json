@@ -6,7 +6,6 @@
     "build": "next build",
     "start": "next start"
   },
-  "proxy": "http://192.165.1.220:28080",
   "dependencies": {
     "@react-native-community/async-storage": "1.11.0",
     "axios": "^1.2.1",
