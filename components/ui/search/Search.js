@@ -106,8 +106,8 @@ const Search = ({ query, querySent, onSearch }) => {
       }),
     };
     fetch(
-      //"https://api.sandbox.ebay.com/identity/v1/oauth2/token",
-      "https://cors-anywhere.herokuapp.com/https://api.sandbox.ebay.com/identity/v1/oauth2/token",
+      "https://api.sandbox.ebay.com/identity/v1/oauth2/token",
+      //"https://cors-anywhere.herokuapp.com/https://api.sandbox.ebay.com/identity/v1/oauth2/token",
       requestOptions
     )
       .then((res) => {
