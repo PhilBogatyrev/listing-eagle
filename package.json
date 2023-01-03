@@ -14,7 +14,7 @@
     "google-search-results-nodejs": "^2.1.0",
     "http-proxy-middleware": "^2.0.6",
     "material-ui": "^0.20.2",
-    "next": "13.0.7",
+    "next": "12.3",
     "node-rsa": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
